@@ -1,0 +1,13 @@
+<h1>there are {{count}} words</h1>
+
+<a href="https://www.youtube.com/">youtube</a>
+
+<h1>your text:</h1>
+{{ fulltext }}
+
+<h1>word count:</h1>
+
+{% for word, counttotal in sortedwords %}
+{{ word }} - {{ counttotal}}
+<br />
+{% endfor %}
